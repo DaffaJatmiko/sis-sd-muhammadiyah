@@ -34,7 +34,6 @@ Kunjungi situs web resmi [SD Muhammadiyah Ambarawa](https://sdmuhammadiyahambara
 
     -   Job: Lead Backend
     -   Email: [daffa.121140181@student.itera.ac.id](mailto:daffa.121140181@student.itera.ac.id)
-    -   Linkedin: [Daffa Abdurrahman Jatmiko](https://www.linkedin.com/in/daffa-jatmiko/)
 
 -   **Andreas Gumarang Sihotang**
     -   Job: Backend
