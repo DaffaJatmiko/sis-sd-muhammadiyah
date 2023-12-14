@@ -52,6 +52,9 @@
                 .mobile-menu:hover .mobile-menu-dropdown {
                     display: block;
                 }
+
+                
+                
             }
         </style>
     </head>
@@ -124,113 +127,110 @@
           
         </header>
 
-        <main>
+        <main class="mx-4 md:mx-24">
 
-              <div class="flex justify-center items-center mt-14">
-                  <div class="grid grid-cols-1">
-                      <h1 class="text-4xl font-bold text-center">
-                          Kepala Sekolah & Wakil Kepala Sekolah
-                      </h1>
-      
-                      <div class="grid grid-cols-2 mt-12 mb-10">
-                          <div class="flex flex-col items-center">
-                              <div
-                                  class="w-52 h-64 bg-cover"
-                                  style="background-image: url('../image/{{$profile->image_1}}')"
-                              ></div>
-                              <h2 class="mt-2 text-lg font-semibold">
-                                  {{$profile->name_1}}
-                              </h2>
-                              <p class="mt-2">Kepala Sekolah</p>
-                          </div>
-      
-                          <div class="flex flex-col items-center">
-                              <div
-                                  class="w-52 h-64 bg-zinc-950 bg-cover"
-                                  style="background-image: url('../image/{{$profile->image_2}}')"
-                              ></div>
-                              <h2 class="mt-2 text-lg font-semibold">
-                                  {{$profile->name_2}}
-                              </h2>
-                              <p class="mt-2">Wakil Kepala Sekolah</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="bg-[#3455EB] pt-10 pb-36">
-                  <div class="mx-24 py-">
-      
-                        <h2 class="mt-5 text-xl font-semibold">PENDAHULUAN</h2>
-            
-                        <h2 class="mt-5 text-2xl font-bold">
-                            Selamat datang di Sekolah Dasar Muhammadiyah <br/> Ambarawa Pringsewu
-                            !
-                        </h2>
-            
-                        <p class="mt-5 mr-16 text-lg">
-                        Puji syukur kita panjatkan kehadirat Allah SWT atas rahmat, taufiq, dan hidayah-Nya yang memungkinkan kita melaksanakan tugas pendidikan. Kurikulum Operasional SD Muhammadiyah Ambarawa Tahun Pelajaran 2023/2024 adalah hasil pengembangan kurikulum pendidikan dasar dan menengah sesuai dengan kondisi sekolah, dengan dukungan dari Dinas Pendidikan dan Kebudayaan Kabupaten Pringsewu.
-                        </p>
-            
-                        <p class="mt-5 mr-16 text-lg">
-                        Pengembangan kurikulum ini mengikuti Standar Nasional Pendidikan, konsep merdeka belajar, dan Profil Pelajar Pancasila. Keberhasilan implementasinya bergantung pada semangat pelaku di lapangan dan dukungan masyarakat. Semoga Kurikulum SD Muhammadiyah Ambarawa menjadi acuan dalam mencapai tujuan pendidikan di tingkat satuan pendidikan dan berkontribusi pada pencapaian tujuan pendidikan nasional.
-                        </p>
-                  </div>
-              </div>
-      
-              <div class="mx-24 py-16 grid grid-cols-2">
-      
-              <div>
-                <h2 class="mt-5 text-xl font-semibold">VISI SEKOLAH</h2>
-                <p class="text-xl mt-12 mr-28">“Membentuk Generasi Abad 21 yang Bertaqwa, Berakhlak Mulia, Berkarakter, Cerdas, Berprestasi, dan Unggul”
-                </p><br>
+            <!-- Bagian Kepala Sekolah & Wakil Kepala Sekolah -->
+            <div class="flex justify-center items-center mt-14 mb-10"> <!-- Menambahkan mb-10 untuk memberi jarak ke bawah -->
+                <div class="grid grid-cols-1">
+                    <h1 class="text-4xl font-bold text-center mb-6">
+                        Kepala Sekolah & Wakil Kepala Sekolah
+                    </h1>
 
-                <!-- Indikator Visi -->
-                <p class="text-xl font-semibold mb-4">Indikator Visi</p>
-                <ul class="list-disc pl-5">
-                    <li>Menumbuhkan Iman dan Takwa;</li>
-                    <li>Membudayakan disiplin, sopan santun, literasi, dan cinta lingkungan hidup;</li>
-                    <li>Meningkatkan ketrampilan hidup sehari-hari;</li>
-                    <li>Mengenal dan dapat memanfaatkan IPTEK;</li>
-                    <li>Meningkatkan prestasi bidang akademik dan non akademik.</li>
-                </ul>
-                </div>
-      
-                  <img src="../images/1.jpg" alt="" class="mt-10 rounded-2xl">
-              </div>
-      
-              <div class="bg-[#3455EB]">
-      
-                  <div class="py-10 grid grid-cols-2 gap-10 ml-10">
-      
-                        <img src="../images/1.jpg" alt="" class="mt-10 rounded-2xl">
-            
-                        <div class="ml-5 ">
-                              <h2 class="mt-5 text-xl font-semibold">MISI SEKOLAH</h2>
-                              <p class="text-xl mt-12 mr-28">
-                                    <div class="text-lg">
-                                          1. Menanamkan sikap religius;
-                                    </div>
-                                    <div class="text-lg">
-                                          2. Melaksanakan kegiatan tadarus, Shalat dhuha, dan Shalat dzuhur berjamaah;
-                                    </div>
-                                    <div class="text-lg">
-                                          3. Melaksanakan Pembelajaran aktif, inovatif, kreatif, efektif, dan menyenangkan;
-                                    </div>
-                                    <div class="text-lg">
-                                          4. Melaksanakan pembinaan khusus kepada murid yang berbakat baik bidang akademik maupun nonakademik; dan
-
-                                    </div>
-                                    <div class="text-lg">
-                                          5. Melaksanakan kegiatan ekstrakurikuler untuk memupuk sifat disiplin, mandiri, tanggung jawab, tenggang rasa, kasih sayang, dan hormat kepada orang tua.
-                                    </div>
-                              </p>
+                    <div class="grid grid-cols-2 gap-10">
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-52 h-64 bg-cover"
+                                style="background-image: url('../image/{{$profile->image_1}}')"
+                            ></div>
+                            <h2 class="mt-4 text-lg font-semibold">
+                                {{$profile->name_1}}
+                            </h2>
+                            <p class="mt-2">Kepala Sekolah</p>
                         </div>
-                  </div>
-              </div>
-              
-              <div class="mx-24 py-10  rounded-md">
 
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-52 h-64 bg-zinc-950 bg-cover"
+                                style="background-image: url('../image/{{$profile->image_2}}')"
+                            ></div>
+                            <h2 class="mt-4 text-lg font-semibold">
+                                {{$profile->name_2}}
+                            </h2>
+                            <p class="mt-2">Wakil Kepala Sekolah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Pendahuluan -->
+            <div class="bg-[#3455EB] pt-10 pb-20">
+                <div class="mx-4 md:mx-24 py-6 text-black">
+                    <h2 class="mt-5 text-xl font-semibold">PENDAHULUAN</h2>
+
+                    <h2 class="mt-5 text-2xl font-bold">
+                        Selamat datang di Sekolah Dasar Muhammadiyah <br/> Ambarawa Pringsewu!
+                    </h2>
+
+                    <p class="mt-5">
+                        Puji syukur kita panjatkan kehadirat Allah SWT atas rahmat, taufiq, dan hidayah-Nya yang memungkinkan kita melaksanakan tugas pendidikan. Kurikulum Operasional SD Muhammadiyah Ambarawa Tahun Pelajaran 2023/2024 adalah hasil pengembangan kurikulum pendidikan dasar dan menengah sesuai dengan kondisi sekolah, dengan dukungan dari Dinas Pendidikan dan Kebudayaan Kabupaten Pringsewu.
+                    </p>
+
+                    <p class="mt-5">
+                        Pengembangan kurikulum ini mengikuti Standar Nasional Pendidikan, konsep merdeka belajar, dan Profil Pelajar Pancasila. Keberhasilan implementasinya bergantung pada semangat pelaku di lapangan dan dukungan masyarakat. Semoga Kurikulum SD Muhammadiyah Ambarawa menjadi acuan dalam mencapai tujuan pendidikan di tingkat satuan pendidikan dan berkontribusi pada pencapaian tujuan pendidikan nasional.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bagian Visi Sekolah -->
+            <div class="mx-4 md:mx-24 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="text-black">
+                    <h2 class="mt-5 text-xl font-semibold">VISI SEKOLAH</h2>
+                    <p class="text-xl mt-5">“Membentuk Generasi Abad 21 yang Bertaqwa, Berakhlak Mulia, Berkarakter, Cerdas, Berprestasi, dan Unggul”</p>
+
+                    <!-- Indikator Visi -->
+                    <p class="text-xl font-semibold mb-4 mt-5">Indikator Visi</p>
+                    <ul class="list-disc pl-5">
+                        <li>Menumbuhkan Iman dan Takwa;</li>
+                        <li>Membudayakan disiplin, sopan santun, literasi, dan cinta lingkungan hidup;</li>
+                        <li>Meningkatkan ketrampilan hidup sehari-hari;</li>
+                        <li>Mengenal dan dapat memanfaatkan IPTEK;</li>
+                        <li>Meningkatkan prestasi bidang akademik dan non akademik.</li>
+                    </ul>
+                </div>
+
+                <img src="../images/1.jpg" alt="" class="mt-10 rounded-2xl">
+            </div>
+
+            <!-- Bagian Misi Sekolah -->
+            <div class="bg-[#3455EB] py-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-4 md:mx-24">
+                    <img src="../images/1.jpg" alt="" class="mt-10 rounded-2xl">
+
+                    <div class="text-black">
+                        <h2 class="mt-5 text-xl font-semibold">MISI SEKOLAH</h2>
+                        <p class="text-xl mt-5">
+                            <div class="text-lg">
+                                1. Menanamkan sikap religius;
+                            </div>
+                            <div class="text-lg">
+                                2. Melaksanakan kegiatan tadarus, Shalat dhuha, dan Shalat dzuhur berjamaah;
+                            </div>
+                            <div class="text-lg">
+                                3. Melaksanakan Pembelajaran aktif, inovatif, kreatif, efektif, dan menyenangkan;
+                            </div>
+                            <div class="text-lg">
+                                4. Melaksanakan pembinaan khusus kepada murid yang berbakat baik bidang akademik maupun nonakademik; dan
+                            </div>
+                            <div class="text-lg">
+                                5. Melaksanakan kegiatan ekstrakurikuler untuk memupuk sifat disiplin, mandiri, tanggung jawab, tenggang rasa, kasih sayang, dan hormat kepada orang tua.
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Kurikulum -->
+            <div class="mx-4 md:mx-24 py-10 rounded-md">
                 <h2 class="text-xl font-semibold text-black">KURIKULUM SD MUHAMMADIYAH AMBARAWA</h2>
 
                 @php
@@ -242,10 +242,10 @@
                         {{$paragraph}}
                     </p>
                 @endforeach
-
             </div>
 
         </main>
+
 
         <footer class="bg-gray-900 text-white text-center py-8">
             <div class="container mx-auto">

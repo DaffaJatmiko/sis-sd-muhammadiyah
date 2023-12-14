@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,9 +55,9 @@
                 display: block;
             }
         }
-
     </style>
 </head>
+
 <body class="bg-gray-100">
     <header>
         <nav class="p-4 shadow-xl bg-white">
@@ -96,16 +97,19 @@
         </nav>
     </header>
 
-    <main>
-        <div class="bg-[#3455EB] h-[32rem] flex items-center justify-center">
-            <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 rounded-md shadow-md mt-5 p-8">
-                <div class="">
-                    <h1 class="text-5xl max-sm:text-4xl font-semibold text-white">Ekstrakurikuler</h1>
-                    <div class="mt-5 text-white">
-                        <p class="text-xl font-normal">
+    <main class="mx-4 my-14 md:mx-8 lg:mx-28">
+
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Ekstrakurikuler</h1>
+
+            <div class="bg-[#3455EB] p-8 md:h-[32rem] flex items-center justify-center">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 rounded-md shadow-md mt-5">
+                <div class="text-white">
+                    <h1 class="text-5xl md:text-6xl font-semibold mb-4">Ekstrakurikuler</h1>
+                    <div class="mt-2 md:mt-5">
+                        <p class="text-xl md:text-2xl font-normal mb-4">
                             SD Muhammadiyah Ambarawa Pringsewu memiliki beberapa ekstrakurikuler seperti:
                         </p>
-                        <ul class="mt-2 list-disc ml-4">
+                        <ul class="list-disc ml-4">
                             @foreach ($extracurricular as $data)
                             <li class="mb-2">{{ $data->title }}</li>
                             @endforeach
@@ -113,33 +117,37 @@
                     </div>
                 </div>
 
-                <img src="../images/1.jpg" alt="" class="w-full h-96 max-sm:h-64 object-cover rounded-xl md:ml-auto">
+                <div class="md:order-first md:ml-auto">
+                    <img src="../images/1.jpg" alt="" class="w-full h-96 max-sm:h-64 object-cover rounded-xl">
+                </div>
             </div>
         </div>
 
+
+
         <div class="mt-16 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             @foreach($extracurricular as $data)
-                <div class="bg-white rounded-md overflow-hidden shadow-lg">
-                    <img src="../image/{{$data->image}}" alt="{{$data->title}}" class="w-full h-48 object-cover rounded-t-md">
-                    <div class="p-4">
-                        <h2 class="text-xl font-semibold mb-2">{{$loop->iteration}}. {{$data->title}}</h2>
-                        <p class="text-gray-700">{{$data->description}}</p>
-                    </div>
+            <div class="bg-white rounded-md overflow-hidden shadow-lg">
+                <img src="../image/{{$data->image}}" alt="{{$data->title}}" class="w-full h-48 object-cover rounded-t-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">{{$loop->iteration}}. {{$data->title}}</h2>
+                    <p class="text-gray-700">{{$data->description}}</p>
                 </div>
+            </div>
             @endforeach
         </div>
     </main>
 
-    <footer class="bg-gray-900 text-white text-center py-8 mt-16">
+    <footer class="bg-gray-900 text-white text-center py-8">
         <div class="container mx-auto">
             <img src="../images/SD MUHAMMADIYAH.png" alt="logo sd muhammadiyah" class="w-16 mb-4 mx-auto">
             <h3 class="text-lg font-semibold">SD Muhammadiyah Ambarawa</h3>
             <p class="mb-4">
-                Jl. Hm. Ghardi No. 29 Ambarawa, 
-                Ambarawa, Kec. Ambarawa, 
+                Jl. Hm. Ghardi No. 29 Ambarawa,
+                Ambarawa, Kec. Ambarawa,
                 Kab. Pringsewu Prov. Lampung
             </p>
-            
+
             <ul class="flex justify-center space-x-4">
                 <li><a href="#" target="_blank" class="text-white"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a></li>
@@ -159,17 +167,17 @@
                 $(".mobile-menu-dropdown").toggleClass("hidden");
             });
 
-            // Handle click on mobile menu links
             $(".mobile-menu-dropdown a").click(function (e) {
                 e.preventDefault();
                 $(".mobile-menu-dropdown").addClass("hidden");
                 var targetPage = $(this).attr("href");
                 if (targetPage !== "javascript:void(0)") {
-                    // Redirect to the selected page if it's not "javascript:void(0)"
-                    window.location.href = targetPage;
+                    window.location.replace(targetPage);
                 }
             });
         });
     </script>
+
 </body>
+
 </html>
